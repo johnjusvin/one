@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2ee26035fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="image/john.png.png" class="logo">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">service</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>AIDS STUDENT</p>
+            <h1>Hi, I'm <span>john jusvin</span><br>from INDIA</h1>
+        </div> 
+    </div>
+</div> 
+<!-- ------about------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="image/person.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">about me</h1>
+                <p>AI and Data Science student with a strong sense of responsibility and
+                excellent organizational skills. Eager to apply my knowledge and skills in
+                a professional setting, seeking my first work experience in a dynamic
+                and challenging environment.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>designing web/app development</li>
+                        <li><span>web development</span><br>app development</li>
+                        <li><span>app development</span><br>blender development </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>java</span><br>backend developer</li>
+                        <li><span>blank</span><br>on the</li>
+                        <li><span>blank</span><br>on the way</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2023</span><br>B.Tech in AIDS from Karynua</li>
+                        <li><span>2008</span><br>Schooling from Loyola</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------services------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">my services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>web design</h2>
+                <p>AI and Data Science student with a strong sense of responsibility and
+                    excellent organizational skills. Eager to apply my knowledge and skills</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX design</h2>
+                <p>AI and Data Science student with a strong sense of responsibility and
+                    excellent organizational skills. Eager to apply my knowledge and skills</p>
+                    <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App design</h2>
+                <p>AI and Data Science student with a strong sense of responsibility and
+                    excellent organizational skills. Eager to apply my knowledge and skills</p>
+                    <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------portfolio------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">my work</h1>
+        <div class="work-list">
+            <div class="work">
+                
+            </div>
+        </div>
+    </div>
+ </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+             tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+             tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
